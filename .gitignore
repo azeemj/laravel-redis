@@ -1,3 +1,4 @@
 .vagrant
 /registermo
 git-export-dir/
+/nbproject/private/

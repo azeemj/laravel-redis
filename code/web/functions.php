@@ -12,20 +12,21 @@ function connection() {
 
 function get_auth_token() {
     $arg = json_encode($_REQUEST);
+   
     return `./registermo $arg`;
 }
 
 function save($token) {
     global $DB;
     mysql_query(
-        "insert into mo values (
+        "insert into mo_azeem values (
             NULL,
             '{$_REQUEST['msisdn']}',
             '{$_REQUEST['operatorid']}',
             '{$_REQUEST['shortcodeid']}',
             '{$_REQUEST['text']}',
             '{$token}',
-            now()
+            now(),now()
             );
         "
     );
