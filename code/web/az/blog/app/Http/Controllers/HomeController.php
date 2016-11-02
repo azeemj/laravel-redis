@@ -45,5 +45,8 @@ class HomeController extends Controller {
     }
     
 
-    
+      function stats(){
+        $count=myfunctions:: stats();
+       
+    }
 }

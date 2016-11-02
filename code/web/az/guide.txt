@@ -1,5 +1,18 @@
 
 
+
+installtion setup
+
+1.please update DB name ,user name and password to .env file that is available under blog folder 
+2.please enter following command from blog folder , "php artisan key:generate "
+3.chmod -R 777 blog/storage/
+4.if the site is not loading then please enter the following command from blog folder ,"composer update" 
+
+
+
+
+
+
 1.I have used laravel frame work ,mysql ,Redis cache server  to implement the solution
 2.please check blog/app/Http/Controller  -->for contorller functions
 3.Model ->app/Mo.php
@@ -14,11 +27,3 @@ http://localhost/azeem-test/code/web/az/blog/unprocessed-cache
 http://localhost/azeem-test/code/web/az/blog/storedb
 http://localhost/azeem-test/code/web/az/blog/delete-cache
 
-
-
-installtion setup
-
-1.please update DB name ,user name and password to .env file that is available under blog folder 
-2.composer update from blog folder
-3.chmod -R 777 blog/storage/
-4.please enter following command from blog folder , "php artisan key:generate "

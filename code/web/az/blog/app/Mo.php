@@ -21,7 +21,7 @@ class Mo extends Model
      *
      * @var array
      */
-    protected $fillable = ['msisdn', 'operatorid', 'shortcodeid','text','auth_token'];
+    protected $fillable = ['msisdn', 'operatorid', 'shortcodeid','text','auth_token','created_at'];
 
   
 }

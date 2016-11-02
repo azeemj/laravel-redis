@@ -22,3 +22,5 @@ Route::get('storedb', 'HomeController@storeToDB');
 Route::get('unprocessed-cache', 'HomeController@totalCache');
 
 Route::get('delete-cache', 'HomeController@deleteCache');
+
+Route::get('stats', 'HomeController@stats');
