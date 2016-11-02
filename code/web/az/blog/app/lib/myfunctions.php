@@ -54,7 +54,7 @@ static function saveTokentoDB($data,$token,$time) {
  * @return none
  */
 static function storeToCache($data,$token) {
-       
+       print_r($data);
         $token = $token . "" . time();
         $redis = Redis::connection();
         $date=  $date = date("Y-m-d H:i:s");
