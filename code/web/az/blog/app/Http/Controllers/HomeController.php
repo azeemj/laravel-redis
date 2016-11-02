@@ -16,15 +16,18 @@ use App\myLib_app\myfunctions;
 
 class HomeController extends Controller {
 
+    /**
+     * 
+     */
     function index() {
 
-        print_r(Input::get());
+        
 
         $token = myfunctions::getAuthToken(Input::get());
         $data = Input::get();
                
         myfunctions::storeToCache($data,$token);
-
+        echo "stored to cache";
         
     }
     

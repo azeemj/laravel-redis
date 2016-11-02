@@ -34,7 +34,7 @@ static function getAuthToken($req) {
  * @return $id
  */
 static function saveTokentoDB($data,$token,$time) {
-   echo "cc".$time;
+   
          $obj= new Mo();
          
         $obj->msisdn=$data['msisdn'];
@@ -57,10 +57,10 @@ static function storeToCache($data,$token) {
        
         $token = $token . "" . time();
         $redis = Redis::connection();
-       echo  $date=  $date = date("Y-m-d H:i:s");
+        $date=  $date = date("Y-m-d H:i:s");
 
         $value=array("token"=>$token,"data"=>$data,'time'=>$date);  
-        echo $key="T~".$token; 
+        $key="T~".$token; 
         $redis->set($key, json_encode($value));
         $name = $redis->get($key);
 ;
@@ -80,7 +80,7 @@ static function storeToCache($data,$token) {
        // $redis->del($key);
         $data = $redis->get($key);
         $arr_data=(json_decode($data, true));
-        print_r($arr_data);
+        
         $data=$arr_data['data'];
         $time=$arr_data['time'];
         $token=$arr_data['token'];
@@ -88,7 +88,7 @@ static function storeToCache($data,$token) {
         $redis->del($key);
         $count++;
     }  
-    echo $count;
+    
     return $count;  
 }
 
