@@ -15,7 +15,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
-DROP DATABASE IF EXISTS samtt;
+
     CREATE DATABASE samtt;
  USE samtt;
 --
@@ -35,7 +35,7 @@ CREATE TABLE `mo_azeem` (
   `shortcodeid` int(11) DEFAULT NULL,
   `text` varchar(255) DEFAULT NULL,
   `auth_token` varchar(60) DEFAULT NULL,
-  `created_at` timestamp(6) NULL DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
