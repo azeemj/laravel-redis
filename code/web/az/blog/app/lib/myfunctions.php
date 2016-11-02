@@ -54,12 +54,12 @@ static function saveTokentoDB($data,$token,$time) {
  * @return none
  */
 static function storeToCache($data,$token) {
-       print_r($data);
-        $token = $token . "" . time();
+       //print_r($data);
+        $token = $token ;
         $redis = Redis::connection();
-        $date=  $date = date("Y-m-d H:i:s");
+         $date = date("Y-m-d H:i:s");
 
-        $value=array("token"=>$token,"data"=>$data,'time'=>$date);  
+        $value=array("token"=>$token,"data"=>$data,"time"=>$date);  
         $key="T~".$token; 
         $redis->set($key, json_encode($value));
         $name = $redis->get($key);
@@ -80,7 +80,7 @@ static function storeToCache($data,$token) {
        // $redis->del($key);
         $data = $redis->get($key);
         $arr_data=(json_decode($data, true));
-        
+        //print_r($arr_data);
         $data=$arr_data['data'];
         $time=$arr_data['time'];
         $token=$arr_data['token'];

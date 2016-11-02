@@ -31,7 +31,7 @@ class TokenTest extends TestCase {
     /**
      * getting all payment methods which are actively available
      */
-    public function testaoCache() {
+    public function teststoreToCache() {
 
 $data=array ( "msisdn" => "60123456789", "operatorid" => "3" ,"shortcodeid" => "8", "text" => "ON GAMES" ) ;
 $token = $token . "" . time();

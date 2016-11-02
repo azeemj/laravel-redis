@@ -33,7 +33,7 @@ class HomeController extends Controller {
     
     function storeToDB(){
         $count=myfunctions::getAllCachedTokens("T~*");
-        echo "stored to Db count".$count;
+        echo "stored to Db count".$count."\n";
         
     }
     
@@ -45,6 +45,7 @@ class HomeController extends Controller {
     function totalCache(){
         $count=myfunctions:: unstoredAllCachedTokens("T~*");
         echo json_encode($count);
+        echo ' --total unprocessed\n';
     }
     
 
