@@ -7,7 +7,7 @@ installtion setup
 2.please enter following command from blog folder , "php artisan key:generate "
 3.chmod -R 777 blog/storage/
 4.if the site is not loading then please enter the following command from blog folder ,"composer update" 
-
+  ex:make sure site is loading by the following URL , http://localhost/azeem-test/code/web/az/blog/index?msisdn=60123456789&operatorid=3&shortcodeid=8&text=ON+GAMES
 
 
 
