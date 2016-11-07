@@ -116,7 +116,7 @@ return [
         'cluster' => false,
 
         'default' => [
-            'host'     => env('REDIS_HOST', '35.162.31.222'),
+            'host'     => env('REDIS_HOST', 'lcoalhost'),
             'password' => env('REDIS_PASSWORD', null),
             'port'     => env('REDIS_PORT', 6379),
             'database' => 0,
