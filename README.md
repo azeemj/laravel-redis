@@ -30,8 +30,13 @@ ex:make sure site is loading by the following URL , http://localhost/azeem-test/
 6. curl http://localhost/object/code/web/az/blog/delete-cache
 All URLs:
 http://localhost/azeem-test/code/web/az/blog/index?msisdn=60123456789&operatorid=3&shortcodeid=8&text=ON+GAMES
+
 http://localhost/azeem-test/code/web/az/blog/unprocessed-cache
+
 http://localhost/azeem-test/code/web/az/blog/storedb
+
 http://localhost/azeem-test/code/web/az/blog/delete-cache
+
 http://localhost/azeem-tes/code/web/az/blog/stats
+
 Thanks
